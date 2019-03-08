@@ -9,11 +9,7 @@ function init() {
   //  const key = e.key
   const input = document.querySelector('input');
  
-  input.addEventListener('keydown', onKeyDownHandler(e) {
-    ;
-  });
-  
-  function onKeyDownHandler(e) {
+  input.addEventListener('keydown', function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
     
     if (key === code[index]) {
@@ -28,7 +24,6 @@ function init() {
     } else {
       index = 0;
     }
-    
-  } // onKeyDownHandler close
+  });
   
 } // init close
