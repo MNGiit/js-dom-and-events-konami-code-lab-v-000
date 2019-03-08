@@ -24,6 +24,13 @@ function init() {
 
 } // init close
 
+
+
+
+
+
+
+
 //  passes 1 test, but not the code triggers an alert if the right code is entered
 //  function onKeyDownHandler(e) {
 //    const key = parseInt(e.detail || e.which);
