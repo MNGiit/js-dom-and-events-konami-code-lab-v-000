@@ -6,21 +6,26 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', onKeyDownHandler);
   
-  let index = 0
+  let index = 0;
   
-  function onKeyDownHandler(e)
-  
-  document.body.addEventListener("keydown", (e) => {
-    const key = e.key
+  function onKeyDownHandler(e) {
+    let key = e.key;
     
-    index = (codes[index] === key) ? ++index : 0
-    
-    if (index === codes.length) {
-      window.alert("Hurray!");
-      idx = 0
+    // check if key equals value of code in the correct part of code array
+    if (code[index] === key) {
+      ++index;
+    } else {
+      index = 0;
     }
     
-  });
+    // checks if index is equal to code length. if it is, do an alert
+    if (index === code.length) {
+      alert("Hurray!");
+      index = 0;
+    }
+    
+  } // end of function
+  
 
 } // init close
 
