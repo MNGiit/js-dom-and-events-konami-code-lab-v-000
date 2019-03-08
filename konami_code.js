@@ -31,4 +31,5 @@ input.addEventListener('keydown', function(e) {
     }
     
   } // onKeyDownHandler close
+  
 } // init close
