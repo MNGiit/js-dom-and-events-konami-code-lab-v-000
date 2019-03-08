@@ -7,6 +7,12 @@ function init() {
   
   // document.body.addEventListener("keydown", (e) => {
   //  const key = e.key
+  const input = document.querySelector('input');
+ 
+input.addEventListener('keydown', function(e) {
+  console.log(e.which);
+});
+  
   
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
