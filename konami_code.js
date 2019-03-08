@@ -9,16 +9,17 @@ function init() {
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
     let index = 0;
-    
+    let correct = 0;
     if (key === code[index]) {
       index++;
- 
-      if (index === code.length) {
+      correct++;
+      if (correct === code.length) {
         alert("Hurray!");
  
         index = 0;
       }
     } else {
+      correct = 0;
       index = 0;
     }
   }
