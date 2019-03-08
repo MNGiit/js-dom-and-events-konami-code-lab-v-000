@@ -17,6 +17,8 @@ function init() {
   });
 } // init close
 
+init();
+
 //  passes 1 test, but not the code triggers an alert if the right code is entered
 //  let index = 0;
 //  document.body.addEventListener('keydown', function(e) {
