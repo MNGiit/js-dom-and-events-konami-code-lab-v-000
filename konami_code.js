@@ -9,20 +9,21 @@ function init() {
 
 } // init close
 
-  function onKeyDownHandler(e) {
-    const key = parseInt(e.detail || e.which);
-    let index = 0;
-    let correct = 0;
-    if (key === code[index]) {
-      index++;
-      correct++;
-      if (correct === code.length) {
-        alert("Hurray!");
- 
-        index = 0;
-      }
-    } else {
-      correct = 0;
-      index = 0;
-    }
-  }
+//  passes 1 test, but not the code triggers an alert if the right code is entered
+//  function onKeyDownHandler(e) {
+//    const key = parseInt(e.detail || e.which);
+//    let index = 0;
+//    let correct = 0;
+//    if (key === code[index]) {
+//      index++;
+//      correct++;
+//      if (correct === code.length) {
+//        alert("Hurray!");
+// 
+//        index = 0;
+//      }
+//    } else {
+//      correct = 0;
+//      index = 0;
+//    }
+//  }
