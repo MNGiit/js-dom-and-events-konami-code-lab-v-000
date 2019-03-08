@@ -20,7 +20,7 @@ function init() {
     
     // checks if index is equal to code length. if it is, do an alert
     if (index === code.length) {
-      console.alert("Hurray!");
+      console.log("Hurray!");
       index = 0;
     }
     
