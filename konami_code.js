@@ -8,7 +8,7 @@ function init() {
   document.body.addEventListener('keydown', onKeyDownHandler);
   
   function onKeyDownHandler(e) {
-    let key = e.parseInt(e.detail || e.which);
+    const key = e.parseInt(e.detail || e.which);
     
     // check if key equals value of code in the correct part of code array
     if (code[index] === key) {
