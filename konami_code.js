@@ -2,10 +2,19 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 function init() {
   // Write your JavaScript code inside the init() function
-  let index = 0;
-  
-  
+  let idx = 0
 
+  document.body.addEventListener("keydown", (e) => {
+    const key = e.key
+    
+    idx = (codes[idx] === key) ? ++idx : 0
+    
+    if (idx === codes.length) {
+      window.alert("Hurray!");
+      idx = 0
+    }
+    
+  });
 } // init close
 
 //  passes 1 test, but not the code triggers an alert if the right code is entered
