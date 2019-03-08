@@ -4,20 +4,22 @@ function init() {
   // Write your JavaScript code inside the init() function
   let index = 0;
   document.body.addEventListener('keydown', function(e) {
-    const key = parseInt(e.which || e.detail);
-
+    const key = parseInt(e.detail || e.which);
+    
+    // check if key equals value of code in the correct part of code array
     if (code[index] === key) {
-      index++;
-
-      if (index === code.length) {
-        alert('Hurray!');
-
-        index = 0;
-      }
+      ++index;
     } else {
       index = 0;
     }
-  });
+    
+    // checks if index is equal to code length. if it is, do an alert
+    if (index === code.length) {
+      window.alert("Hurray!");
+      index = 0;
+    }
+    
+  }); // end of function
 } // init close
 
 
