@@ -25,6 +25,24 @@ function init() {
 } // init close
 
 
+//  let index = 0;
+//  document.body.addEventListener('keydown', function(e) {
+//    const key = e.parseInt(e.detail || e.which);
+//    
+//    // check if key equals value of code in the correct part of code array
+//    if (code[index] === key) {
+//      ++index;
+//    } else {
+//      index = 0;
+//    }
+//    
+//    // checks if index is equal to code length. if it is, do an alert
+//    if (index === code.length) {
+//      window.alert("Hurray!");
+//      index = 0;
+//    }
+//    
+//  }); // end of function
 
 
 
