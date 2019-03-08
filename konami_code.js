@@ -24,6 +24,8 @@ function init() {
 
 
 //  passes 1 test, but not the code triggers an alert if the right code is entered
+//  the reason it didn't pass ws because of e.parseInt
+//  it should just be parseInt
 //  let index = 0;
 //  document.body.addEventListener('keydown', function(e) {
 //    const key = e.parseInt(e.detail || e.which);
