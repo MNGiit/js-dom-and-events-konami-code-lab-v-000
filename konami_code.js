@@ -6,7 +6,7 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', onKeyDownHandler);
   
-  const input = document.querySelector('input');
+  
  
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
