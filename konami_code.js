@@ -6,6 +6,21 @@ function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', onKeyDownHandler);
   
+  let index = 0
+  
+  function onKeyDownHandler(e)
+  
+  document.body.addEventListener("keydown", (e) => {
+    const key = e.key
+    
+    index = (codes[index] === key) ? ++index : 0
+    
+    if (index === codes.length) {
+      window.alert("Hurray!");
+      idx = 0
+    }
+    
+  });
 
 } // init close
 
