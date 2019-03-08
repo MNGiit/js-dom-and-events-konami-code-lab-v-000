@@ -9,8 +9,8 @@ function init() {
   //  const key = e.key
   const input = document.querySelector('input');
  
-  input.addEventListener('keydown', function(e) {
-    console.log(e.which);
+  input.addEventListener('keydown', onKeyDownHandler(e) {
+    ;
   });
   
   function onKeyDownHandler(e) {
